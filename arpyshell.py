@@ -9,7 +9,7 @@
 import subprocess
 from functools import partial
 
-class SHELL(object):
+class ArPyShell(object):
     def __run(self,command,argv="",shell="bash -c ",output=False,stdout=subprocess.PIPE,stderr=subprocess.PIPE,utf8=True):
         if argv:
             if output:
